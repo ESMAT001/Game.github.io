@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     --box-shadow: 0px 1.2rem 2.5rem rgba(0, 0, 0, 0.24);
+    --text-color: #ed1c16;
     --white: #f7f7f7;
 }
 
@@ -12,20 +13,17 @@ body {
 }
 
 .container {
-    background-color: rgba(170, 32, 32, 0.26);
+    background: none;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     width: 80%;
-    height: 96vh;
+    height: 93vh;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
-    border-radius: 4px;
-    box-shadow: var(--box-shadow);
 }
 
 .mid {
@@ -74,14 +72,14 @@ img {
 }
 
 [class^="player-"]:not(:last-child) {
-    color: red;
+    color: var(--text-color);
     font-size: 1.5rem;
 }
 
 [class$="-score"] {
     font-size: 1.2rem;
     color: white;
-    background-color: red;
+    background-color: var(--text-color);
     display: inline;
     margin: 0 auto;
     padding: 0.2rem 2rem 0.5rem 2rem;
@@ -100,17 +98,17 @@ img {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background-color: red;
+    background-color: var(--text-color);
 }
 
 .active-back {
-    background-color: #f5d9d9;
+    background-color: #ed1c1633;
 }
 
 .btn {
     text-decoration: none;
-    color: red;
-    border-bottom: 1.3px solid red;
+    color: var(--text-color);
+    border-bottom: 1.3px solid var(--text-color);
     width: 58%;
     margin: 0 auto;
     padding: 0.4rem 0;
@@ -121,7 +119,7 @@ img {
 .btn:hover {
     color: white;
     border: none;
-    background-color: red;
+    background-color: var(--text-color);
     box-shadow: var(--box-shadow);
     transform: translateY(-2px) scale(1.056);
 }
@@ -146,6 +144,9 @@ img {
         flex-direction: row;
         width: 80vw;
         height: 85vh;
+        box-shadow: var(--box-shadow);
+        background-color: white;
+        border-radius: 4px;
     }
     .player {
         height: 80%;
