@@ -34,7 +34,7 @@ body {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    height: 30.5vh;
+    height: 39%;
     /* border: 1px solid black; */
 }
 
@@ -58,7 +58,7 @@ img {
 
 .player {
     width: 85%;
-    height: 27.5vh;
+    height: 23.5vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -150,7 +150,7 @@ img {
     .player {
         height: 80%;
         max-width: 14rem;
-        width: 50%;
+        width: 100%;
     }
     .mid {
         height: 75%;
